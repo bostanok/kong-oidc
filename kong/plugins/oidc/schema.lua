@@ -10,7 +10,7 @@ return {
         { client_secret = { type = "string", required = true }, },
         { discovery = { type = "string", required = true, default = "https://.well-known/openid-configuration" }, },
         { introspection_endpoint = { type = "string", required = false }, },
-        { timeout = { type = "number", required = false }, },
+        { timeout = { type = "number", required = false, default = 10 }, },
         { introspection_endpoint_auth_method = { type = "string", required = false }, },
         { bearer_only = { type = "string", required = true, default = "no" }, },
         { realm = { type = "string", required = true, default = "kong" }, },
